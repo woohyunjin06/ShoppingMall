@@ -1,0 +1,259 @@
+GET http://localhost:8080/api/product/popular
+Accept: application/json
+
+<> 2019-06-24T032559.200.json
+
+###
+
+GET http://localhost:8080/api/product/popular
+Accept: application/json
+
+<> 2019-06-24T032418.200.json
+
+###
+
+GET http://localhost:8080/api/product/popular
+Accept: application/json
+
+<> 2019-06-24T032405.200.json
+
+###
+
+GET http://localhost:8080/api/product/popular
+Accept: application/json
+
+<> 2019-06-24T031056.200.json
+
+###
+
+GET http://localhost:8080/api/popular
+Accept: application/json
+
+<> 2019-06-24T031040.404.json
+
+###
+
+GET http://localhost:8080/api/category
+Accept: application/json
+
+<> 2019-06-24T022954.200.json
+
+###
+
+GET http://localhost:8080/api/category
+Accept: application/json
+
+<> 2019-06-24T021800.200.json
+
+###
+
+GET http://localhost:8080/api/category
+Accept: application/json
+
+<> 2019-06-24T020318.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+  "username" : "woohyunjin06",
+  "password" : "12345678",
+  "name" : "우현진",
+  "homeNumber" : "",
+  "phoneNumber" : "010-9466-5318",
+  "zipCode" : "12345",
+  "email" : "woohyunjin06@gmail.com"
+}
+
+<> 2019-06-18T023450.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "woohyunjin06",
+  "password": "12345678"
+}
+
+<> 2019-06-17T034453.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+  "username" : "woohyunjin06",
+  "password" : "12345678",
+  "name" : "우현진",
+  "homeNumber" : "",
+  "phoneNumber" : "010-9466-5318",
+  "zipCode" : "12345",
+  "email" : "woohyunjin06@gmail.com"
+}
+
+<> 2019-06-17T034451.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "woohyunjin06",
+  "password": "12345678"
+}
+
+<> 2019-06-17T034355.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "woohyunjin06",
+  "password": "1234578"
+}
+
+<> 2019-06-17T034352.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "woohyunjin06",
+  "password": "12345678"
+}
+
+<> 2019-06-17T034323.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+  "username" : "woohyunjin06",
+  "password" : "12345678",
+  "name" : "우현진",
+  "homeNumber" : "",
+  "phoneNumber" : "010-9466-5318",
+  "zipCode" : "12345",
+  "email" : "woohyunjin06@gmail.com"
+}
+
+<> 2019-06-17T034256.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "woohyunjin06",
+  "password": "12345678"
+}
+
+<> 2019-06-17T034200.500.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+  "username" : "woohyunjin06",
+  "password" : "12345678",
+  "name" : "우현진",
+  "homeNumber" : "",
+  "phoneNumber" : "010-9466-5318",
+  "zipCode" : "12345",
+  "email" : "woohyunjin06@gmail.com"
+}
+
+<> 2019-06-17T034059.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "woohyunjin06",
+  "password": "12345678"
+}
+
+<> 2019-06-17T033957.500.json
+
+###
+
+POST http://localhost:8080/api/login
+Content-Type: application/json
+
+{
+  "username": "woohyunjin06",
+  "password": "12345678"
+}
+
+<> 2019-06-17T033951.404.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+  "username" : "woohyunjin06",
+  "password" : "12345678",
+  "name" : "우현진",
+  "homeNumber" : "",
+  "phoneNumber" : "010-9466-5318",
+  "zipCode" : "12345",
+  "email" : "woohyunjin06@gmail.com"
+}
+
+<> 2019-06-17T033918.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+  "username" : "woohyunjin06",
+  "password" : "12345678",
+  "name" : "우현진",
+  "homeNumber" : "",
+  "phoneNumber" : "010-9466-5318",
+  "zipCode" : "12345",
+  "email" : "woohyunjin06@gmail.com"
+}
+
+<> 2019-06-17T033903.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+  "username" : "woohyunjin06",
+  "password" : "12345678",
+  "name" : "우현진",
+  "homeNumber" : "",
+  "phoneNumber" : "010-9466-5318",
+  "zipCode" : "12345",
+  "email" : "woohyunjin06@gmail.com"
+}
+
+<> 2019-06-17T032629.200.json
+
+###
+

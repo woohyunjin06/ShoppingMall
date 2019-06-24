@@ -1,0 +1,48 @@
+{
+  "status": 200,
+  "message": "성공",
+  "data": [
+    {
+      "id": 8,
+      "categoryId": 1,
+      "title": "테스트아이템 1",
+      "company": "요기",
+      "imageId": null,
+      "detailInfo": "테스트아이템 입니다.",
+      "purchaseInfo": "구매정보 입니다.",
+      "originalPrice": 60000,
+      "price": 5000,
+      "saleCount": 0,
+      "created": "2019-06-24T15:24:16.342772",
+      "modified": "2019-06-24T15:24:16.342821"
+    },
+    {
+      "id": 10,
+      "categoryId": 1,
+      "title": "테스트아이템 3",
+      "company": "요기",
+      "imageId": null,
+      "detailInfo": "테스트아이템 입니다.",
+      "purchaseInfo": "구매정보 입니다.",
+      "originalPrice": 60000,
+      "price": 5000,
+      "saleCount": 2,
+      "created": "2019-06-24T15:24:16.348354",
+      "modified": "2019-06-24T15:24:16.348372"
+    },
+    {
+      "id": 9,
+      "categoryId": 1,
+      "title": "테스트아이템 2",
+      "company": "요기",
+      "imageId": null,
+      "detailInfo": "테스트아이템 입니다.",
+      "purchaseInfo": "구매정보 입니다.",
+      "originalPrice": 60000,
+      "price": 5000,
+      "saleCount": 4,
+      "created": "2019-06-24T15:24:16.347272",
+      "modified": "2019-06-24T15:24:16.347293"
+    }
+  ]
+}
