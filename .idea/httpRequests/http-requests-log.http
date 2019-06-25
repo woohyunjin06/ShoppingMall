@@ -1,3 +1,17 @@
+GET http://localhost:8080/api/product/recommended/popular
+Accept: application/json
+
+<> 2019-06-25T014240.200.json
+
+###
+
+GET http://localhost:8080/api/product/popular
+Accept: application/json
+
+<> 2019-06-25T014213.200.json
+
+###
+
 GET http://localhost:8080/api/product/popular
 Accept: application/json
 

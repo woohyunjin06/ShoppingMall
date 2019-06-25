@@ -1,11 +1,9 @@
 package kr.hs.dgsw.hyunjin.shop.Controller;
 
 import kr.hs.dgsw.hyunjin.shop.Domain.Image;
-import kr.hs.dgsw.hyunjin.shop.Protocol.AttachmentProtocol;
 import kr.hs.dgsw.hyunjin.shop.Protocol.ResponseFormat;
 import kr.hs.dgsw.hyunjin.shop.Protocol.ResponseType;
 import kr.hs.dgsw.hyunjin.shop.Repository.ImageRepository;
-import kr.hs.dgsw.hyunjin.shop.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +11,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.swing.text.html.Option;
 import java.io.*;
 import java.net.URLConnection;
 import java.time.LocalDateTime;

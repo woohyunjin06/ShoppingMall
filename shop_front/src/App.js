@@ -8,15 +8,15 @@ import Navigation from './Navigation';
 
 import './App.scss';
 
-import Stores from './Stores';
+import Stores from './Product';
 
 const App = () => (
     <Provider stores={Stores}>
       <BrowserRouter>
-        <header className='app-header'>
+        <header className='app-header' style={{zIndex: '100'}}>
             <Link to='/'>Home</Link>
             <Link to='/user'>로그인</Link>
-            <Navigation/>
+            <Navigation />
         </header>
 
         <section className='app-body'>
