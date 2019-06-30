@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {inject, observer} from "mobx-react";
-import {Redirect} from 'react-router-dom';
+import {Redirect, withRouter} from 'react-router-dom';
 
 import './Login.scss';
 
@@ -14,25 +14,25 @@ class Login extends Component {
     state = {
         username: '',
         password: '',
-        goToProfile: false,
+        goToMain: false,
         goToRegister: false
     };
 
     render() {
-        if (this.state.goToProfile)
-            return <Redirect to='/user'/>;
+        if (this.state.goToMain)
+            this.props.history.goBack();
         if (this.state.goToRegister)
             return <Redirect to='/user/register'/>;
 
         return (
             <div className='login_container'>
                 <div className='login_element_container'>
-                    <div className='label-field'>아이디:</div>
-                    <div className='form-field'><input value={this.state.username}onChange={this.updateUsername}/></div>
-                    <div className='label-field'>비밀번호</div>
-                    <div className='form-field'><input value={this.state.password} type='password' onChange={this.updatePassword}/></div>
-                    <div><button onClick={this.loginUser}>로그인</button></div>
-                    <div><button onClick={this.registerUser}>회원가입</button></div>
+                    <input value={this.state.username} placeholder='아이디' onChange={this.updateUsername}/>
+                    <input value={this.state.password} placeholder='비밀번호' type='password' onChange={this.updatePassword}/>
+                    <button onClick={this.loginUser}>로그인</button>
+                    <div className='plz_register'>
+                    <div>회원이 아니세요?</div><div className='plz_register_highlight' onClick={this.registerUser} >새로운 계정을 만드세요!</div>
+                    </div>
                 </div>
             </div>
         );
@@ -42,7 +42,7 @@ class Login extends Component {
         if(await this.props.stores.profileStore.login(this.state) === true) {
             this.setState({
                 ...this.state,
-                goToProfile: true
+                goToMain: true
             });
         }
         else {
@@ -73,4 +73,4 @@ class Login extends Component {
     };
 }
 
-export default Login;
+export default withRouter(Login);

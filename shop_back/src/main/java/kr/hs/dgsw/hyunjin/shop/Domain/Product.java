@@ -26,7 +26,7 @@ public class Product {
 
     private Long imageId;
 
-    private String detailInfo; // 상세정보
+    private String detailInfo; // 상세 정보
     private String purchaseInfo; // 구매 정보
 
     private Long originalPrice; // 시중 가격
@@ -52,5 +52,21 @@ public class Product {
         this.price = price;
         this.saleCount = saleCount;
         this.recommended = recommended;
+    }
+
+    public Product(Product p) {
+        this.id = p.getId();
+        this.categoryId = p.getCategoryId();
+        this.title = p.getTitle();
+        this.company = p.getCompany();
+        this.imageId = p.getImageId();
+        this.detailInfo = p.getDetailInfo();
+        this.purchaseInfo = p.getPurchaseInfo();
+        this.originalPrice = p.getOriginalPrice();
+        this.price = p.getPrice();
+        this.saleCount = p.getSaleCount();
+        this.recommended = p.isRecommended();
+        this.created = p.getCreated();
+        this.modified = p.getModified();
     }
 }

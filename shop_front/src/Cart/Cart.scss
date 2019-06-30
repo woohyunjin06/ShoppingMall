@@ -1,0 +1,21 @@
+.root_cart {
+  display: flex;
+  flex-direction: column;
+  .cart_label {
+    margin: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: cornflowerblue;
+  }
+  .total_price {
+    display: flex;
+    font-weight: bold;
+    font-size: 25px;
+    align-self: flex-end;
+    margin-right: 50px;
+
+    .total_price_number {
+      color: cornflowerblue;
+    }
+  }
+}

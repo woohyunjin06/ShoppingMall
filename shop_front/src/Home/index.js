@@ -17,28 +17,20 @@ class Home extends Component {
     render() {
         let productStore = this.props.stores.productStore;
         return (
-            <div className='root'>
-                <nav>
-
-                </nav>
-                <section>
-                    <hr/>
-                    <div>베스트 추천 상품</div>
-                    <hr/>
-                    { productStore.popularRecommendProduct && <ProductList items={productStore.popularRecommendProduct}/>}
-                    <hr/>
-                    <div>추천 상품</div>
-                    <hr/>
-                    { productStore.recommendProduct && <ProductList items={productStore.recommendProduct}/>}
-                    <hr/>
-                    <div>인기 상품</div>
-                    <hr/>
-                    { productStore.popularProduct && <ProductList items={productStore.popularProduct}/>}
-                    <hr/>
-                </section>
-                <aside>
-                    ccc
-                </aside>
+            <div className='root_home'>
+                <hr/>
+                <div className='label_title'>베스트 추천 상품</div>
+                <hr/>
+                <div>{ productStore.popularRecommendProduct && <ProductList items={productStore.popularRecommendProduct}/>}</div>
+                <hr/>
+                <div className='label_title'>추천 상품</div>
+                <hr/>
+                <div>{ productStore.recommendProduct && <ProductList items={productStore.recommendProduct}/>}</div>
+                <hr/>
+                <div className='label_title'>인기 상품</div>
+                <hr/>
+                <div>{ productStore.popularProduct && <ProductList items={productStore.popularProduct}/>}</div>
+                <hr/>
             </div>
         )
     }

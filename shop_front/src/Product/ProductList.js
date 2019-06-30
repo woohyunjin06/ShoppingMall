@@ -6,10 +6,9 @@ import './ProductList.scss'
 import ProductItem from './ProductItem';
 
 const ProductList = (props) => {
-    console.log(props.items);
     return (
         <ul>
-            {props.items.map(item =>  <ProductItem key={item.id} data={item}/>)}
+            { props.items.map(item =>  <ProductItem key={item.id} data={item}/>) }
         </ul>
     );
 };

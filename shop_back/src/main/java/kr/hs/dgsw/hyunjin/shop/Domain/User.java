@@ -43,4 +43,15 @@ public class User {
     public boolean hasEmpty() {
         return username.isEmpty() || password.isEmpty() || name.isEmpty() || phoneNumber.isEmpty() || zipCode.isEmpty() || address.isEmpty() || email.isEmpty();
     }
+
+    public User(String username, String password, String name, String homeNumber, String phoneNumber, String zipCode, String address, String email) {
+        this.username = username;
+        this.password = password;
+        this.name = name;
+        this.homeNumber = homeNumber;
+        this.phoneNumber = phoneNumber;
+        this.zipCode = zipCode;
+        this.address = address;
+        this.email = email;
+    }
 }

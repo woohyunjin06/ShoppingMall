@@ -6,7 +6,7 @@ import './CategoryList.scss'
 const CategoryList = (props) => {
     return (
         <ul className='menu-bar'>
-            {props.categories.map(item =>  <li key={item.id}><Link to='/board'>{item.name}</Link></li>)}
+            {props.categories.map(item =>  <li key={item.id}><Link to={`/category/${item.id}`}>{item.name}</Link></li>)}
         </ul>
     );
 };

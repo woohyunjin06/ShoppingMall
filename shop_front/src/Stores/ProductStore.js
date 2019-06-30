@@ -67,6 +67,43 @@ class ProductStore {
             alert(ex.toLocaleString());
         }
     };
+
+    @observable selectedProduct = null;
+    @action getProduct = async (productId) => {
+        try {
+            let response = await axios({
+                url: `http://localhost:8080/api/product/${productId}`,
+                method: 'get',
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8'
+                },
+                timeout: 3000
+            });
+            if(response.data.status === 200) {
+                this.selectedProduct = response.data.data;
+            }
+        } catch(ex) {
+            alert(ex.toLocaleString());
+        }
+    };
+
+    @action addCart = async (productId) => {
+        try {
+            let response = await axios({
+                url: `http://localhost:8080/api/cart`,
+                method: 'get',
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8'
+                },
+                timeout: 3000
+            });
+            if(response.data.status === 200) {
+                this.selectedProduct = response.data.data;
+            }
+        } catch(ex) {
+            alert(ex.toLocaleString());
+        }
+    };
 }
 
 export default ProductStore.getInstance();

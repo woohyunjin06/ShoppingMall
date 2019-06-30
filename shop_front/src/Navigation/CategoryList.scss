@@ -4,15 +4,14 @@
   li {
     display: inline-block;
     a {
-      color: black;
+      color: white;
       text-decoration: none;
       padding: 5px 10px;
       display: block;
       border-bottom: 3px solid transparent;
 
       &:hover {
-        color: green;
-        border-bottom: 3px solid green;
+        border-bottom: 3px solid white;
       }
     }
   }

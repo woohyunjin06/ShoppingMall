@@ -1,9 +1,9 @@
 import React from 'react';
 
-import NoImage from './noimage.png'
+import NoImage from '../Product/noimage.png'
 import {Link} from "react-router-dom";
 
-const ProductItem = ({data}) => {
+const CategoryProductItem = ({data}) => {
 
     // const [state, setState] = React.useState(0);
 
@@ -21,4 +21,4 @@ const ProductItem = ({data}) => {
 
 };
 
-export default ProductItem;
+export default CategoryProductItem;

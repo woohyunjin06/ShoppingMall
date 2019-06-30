@@ -56,4 +56,15 @@ public class ProductServiceImpl implements ProductService {
     public List<Product> getPopularRecommended() {
         return productRepository.findTop3ByRecommendedIsTrueOrderBySaleCountDesc();
     }
+
+    @Override
+    public Product getProductById(Long id) {
+        return productRepository.findById(id)
+                .orElse(null);
+    }
+
+    @Override
+    public List<Product> getProductByCategoryId(Long categoryId) {
+        return productRepository.findAllByCategoryId(categoryId);
+    }
 }

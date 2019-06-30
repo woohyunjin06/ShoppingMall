@@ -1,0 +1,125 @@
+.root_product_view {
+  display: flex;
+  flex-direction: column;
+  margin: 0 100px;
+  .product_simple_info{
+    display: flex;
+    flex-direction: row;
+
+    .image_frame {
+      flex: 1 0 0;
+      border-right: 1px solid lightgray;
+      img {
+        width: 100%;
+      }
+    }
+
+    .product_info {
+      display: flex;
+      flex-direction: column;
+      flex: 2 0 0;
+      padding: 20px;
+      hr {
+        border: 0.5px solid lightgray;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .product_name {
+        font-size: 30px;
+      }
+      .product_company {
+        font-size: 20px;
+        color: gray;
+      }
+      .product_price_holder {
+        margin-top: 10px;
+        margin-bottom: auto;
+        .product_price {
+          display: flex;
+          font-size: 30px;
+          color: cornflowerblue;
+          .product_price_number {
+            font-weight: bold;
+          }
+          .product_price_label {
+            color: gray;
+            margin-right: 10px;
+          }
+        }
+      }
+
+
+      .product_button {
+        margin-top: auto;
+        display: flex;
+        flex-direction: row;
+
+        .product_count {
+          display: flex;
+          margin: 10px;
+          flex: 1 0 0;
+
+          input {
+            flex: 1 0 0;
+            text-align: center;
+          }
+        }
+
+        button {
+          margin: 10px;
+          flex: 5 0 0;
+          height: 50px;
+        }
+
+        .product_btn_cart {
+          border: 1px solid cornflowerblue;
+          background: white;
+          font-size: 15px;
+        }
+        .product_btn_pay {
+          background: cornflowerblue;
+          color: white;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  hr{
+    margin: auto 0;
+    border: 0.5px solid lightgray;
+  }
+  .product_title_label {
+    text-align: center;
+    margin: 5px 0;
+    color: cornflowerblue;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .product_content_label {
+    margin: 5px 0;
+  }
+
+  .product_review_write {
+    display: flex;
+    flex-direction: column;
+    div {
+      color: cornflowerblue;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    textarea {
+      width: 100%;
+      height: 60px;
+      resize: none;
+    }
+    button {
+      margin-top: 10px;
+      align-self: flex-end;
+      background: cornflowerblue;
+      color: white;
+      width: 100px;
+      height: 30px;
+    }
+  }
+}
+

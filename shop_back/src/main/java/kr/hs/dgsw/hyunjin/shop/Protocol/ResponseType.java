@@ -8,6 +8,9 @@ public enum ResponseType {
     USER_DUPLICATE_EMAIL                    (500, "중복되는 이메일이 존재합니다."),
     USER_DUPLICATE_PHONE                    (500, "중복되는 전화번호가 존재합니다."),
 
+    CART_ADD_OK                             (200, "장바구니에 추가했습니다."),
+    CART_ADD_DUPLICATE                      (500, "이미 장바구니에 추가된 상품입니다."),
+
 
 
     ;

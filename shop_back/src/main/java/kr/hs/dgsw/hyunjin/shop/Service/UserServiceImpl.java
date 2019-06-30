@@ -6,11 +6,18 @@ import kr.hs.dgsw.hyunjin.shop.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
+
 @Service
 public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository userRepository;
+
+    @PostConstruct
+    public void init() {
+        userRepository.save(new User("woohyunjin06", "1234", "우현진" , null, "010-9466-5318", "12345","어디징","woohyunjin06@naver.com"));
+    }
 
     @Override
     public ResponseType register(User u) {

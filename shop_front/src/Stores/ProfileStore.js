@@ -25,10 +25,10 @@ class ProfileStore {
                 data: user
             });
             if(response.data.status === 200) {
-                this.user = response.data;
+                this.user = response.data.data;
                 this.user.password = user.password;
                 return true;
-            }
+        }
             return false;
         } catch(ex) {
             alert(ex.toLocaleString());

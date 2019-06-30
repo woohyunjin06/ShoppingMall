@@ -1,15 +1,27 @@
-.app-header {
-  background-color: white;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 
-
-}
-
-.app-body {
-
-  position: absolute;
-  top: 80px;
+  .app-header {
+    display: flex;
+    flex-direction: column;
+    .navigator {
+      padding: 10px;
+      display: flex;
+      justify-content: flex-end;
+      a{
+        text-decoration: none;
+        color: white;
+        margin: 0 5px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+    background-color: cornflowerblue;
+  }
+  .app-body {
+    flex: 1;
+  }
 }

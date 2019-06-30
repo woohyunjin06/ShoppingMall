@@ -25,7 +25,7 @@ public class AttachmentController {
     @Autowired
     private ImageRepository imageRepository;
 
-    @PostMapping("/attachment")
+    @PostMapping("/api/attachment")
     public ResponseFormat upload(@RequestPart MultipartFile srcFile) {
         String destFilename = "/Users/hyunjin/Project/WebProgramming/Shopping/shop_back/src/upload/"
                             + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy/MM/dd/"))
@@ -49,9 +49,10 @@ public class AttachmentController {
         }
     }
 
-    @GetMapping("/attachment/{id}")
+    @GetMapping("/api/attachment/{id}")
     public void download(@PathVariable Long id,
             HttpServletRequest req, HttpServletResponse resp){
+
         try {
             String filePath;
             String fileName;
